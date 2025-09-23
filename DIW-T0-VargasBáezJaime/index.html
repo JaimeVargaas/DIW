@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Jaime Vargas Báez</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <hr>
+        <h1>Prueba Inicial</h1>
+        <a href="./index.html">
+            <button id="i">Inicio</button>
+        </a>
+        <a href="#2m">
+            <button id="g">Galería</button>
+        </a>
+        <a href="#contacto">
+            <button id="c">Contacto</button>
+        </a>
+    </nav>
+
+    <!-- Galería de imágenes -->
+
+    <div>
+        <table>
+            <tr>
+                <td><img src="./1º equipacion.png" alt="" id="1b"></td>
+                <td><img src="./2º equipacion.png" alt="" id="2b"></td>
+                <td><img src="./3º equipacion.png" alt="" id="3b" ></td>
+            </tr>
+            <tr>
+                <td><img src="./1º equipacion madrid.png" alt="" id="1m"></td>
+                <td><img src="./2º equipacion madrid.png" alt="" id="2m"></td>
+                <td><img src="./3º equipacion madrid.png" alt="" id="3m"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Formulario-->
+    <form id="contacto" action="get" action="jvarbae782@g.educaand.es">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required="required">
+
+            <br><br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" name="correo" required="required">
+
+             <br><br> 
+
+            <label id="sexo" for="sexo">Sexo:</label>
+            <div class="radio-group">
+                <input id="sexo" type="radio" name="sexo"> <label for="sexo">Hombre</label>
+                <input id="sexo" type="radio" name="sexo"> <label for="sexo">Mujer</label>
+            </div>
+
+            <br><br>
+
+            <label for="elige">Elige lo que tengas o lo que más uses: </label>
+            <select name="elige">
+                <optgroup label="Dispositivos: ">
+                    <option value="noentrega">Teléfono móvil</option>
+                    <option value="Entregamal">Ordenador de sobremesa</option>
+                    <option value="Entregamal">Ordenador portátil</option>
+                    <option value="Entregamal">No tengo nada</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <input onclick="monstrarMensaje()" id="en" type="submit" value="Enviar">
+            <input id="bo" type="reset" value="Borrar">
+        </fieldset>
+    </form>
+
+    <script>
+
+        function mostrarMensaje(){
+            alert("El mensaje ha sido enviado");
+        }
+    </script>
+    
+</body>
+</html>

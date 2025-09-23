@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(189, 189, 189);
+}
+
+hr {
+    background-image: url("./fondo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #81BFDA;
+    height: 140px;
+    width: 100%;
+    margin: 0;
+    border: 0px solid #81BFDA;
+}
+
+nav {
+    font-family: sans-serif;
+    width: 100%;
+    left: 0%;
+    position: absolute;
+    top: 9px;
+    z-index: 2;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;   
+    top: 1.5%; 
+    left: 45%; 
+    color: black;
+}
+
+button {
+    position: absolute;
+    top: 55%;
+    border: 0px solid black;
+    border-radius: 5px;
+    background-color: #81BFDA;
+    font-size: 20px;
+}
+
+#i {
+    left:43%;
+}
+
+#g {
+    left: 47.8%;
+}
+
+#c {
+    left: 54%;
+}
+
+div {
+    top: 25%;
+    position: absolute;
+    left: 15%;
+}
+
+table, ul, li, td {
+    border: 5px solid white;
+    border-collapse: collapse;
+}
+
+img:hover {
+    width: 110%;
+}
+
+button:hover {
+    font-size: 22px;
+}
+
+form {
+    top: 135%;
+    left: 30%;
+    position: absolute;
+}
+
+#sexo {
+    margin-top: 52px;
+}
+

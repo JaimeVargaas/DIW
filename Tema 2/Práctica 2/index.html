@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - formularios</title>
+    
+</head>
+
+<body>
+    <form action="get">
+        <fieldset>
+            <legend>Datos Básicos</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre aquí">
+
+            <label for="passwd">Contraseña:</label>
+            <input type="password" name="passwd">
+
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" placeholder="ej: yo@tu.es">
+
+            <label for="tlf">Teléfono</label>
+            <input type="tel" name="tlf" placeholder="+99 111 222 333">
+
+            <label for="web">Sitio Web:</label>
+            <input type="url" name="web">
+
+            <label for="campo">Campo de solo lectura</label>
+            <input type="" name="campo" value="Este valor no se puede cambiar" readonly>
+
+            <label for="des">Campo deshabilitado:</label>
+            <input type="text" name="des" placeholder="Este campo no se envía">
+        </fieldset>
+
+        <fieldset>
+            <legend>Opciones y Selecciones</legend>
+
+            <label for="gen">Género:</label>
+            <input type="radio" name="gen" value="Hombre">
+            <label for="gen">Hombre</label>
+            <input type="radio" name="gen" value="Hombre">
+            <label for="gen">Mujer</label>
+
+            <label for="dis1">Dispositivos:</label>
+            <input type="checkbox" name="dis">
+            <label for="dis1">PC</label>
+            <input type="checkbox" name="dis2">
+            <label for="dis2">Tableta</label>
+            <input type="checkbox" name="dis3">
+            <label for="dis3">Móvil</label>
+
+            <label for="grupo">Provincia:</label>
+            <select name="grupo" id="grupo">
+                <option value="r">Teruel</option>
+                <option value="a">Andalucía</option>
+                <option value="v">Cataluña</option>
+            </select>
+
+            <label for="editor">Editor de código favorito:</label>
+            <input type="text" name="editor" id="editor">
+        </fieldset>
+
+        <fieldset>
+            <legend>Fechas, Números y Rangos</legend>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" name="fecha">
+
+            <label for="hora">Hora de la cita:</label>
+            <input type="time" name="hora">
+
+            <label for="sem">Semana del año:</label>
+            <input type="week">
+
+            <label for="mes">Mes de facturación:</label>
+            <input type="month" name="mes">
+
+            <label for="fh">Fecha y hora exactas</label>
+            <input type="datetime" name="fh" id="fh">
+
+            <label for="cant">Cantidad(entre 10 y 50, en pasos de 50)</label>
+            <input type="number" name="cant">
+
+            <label for="sa">Nivel de Satisfacción (0-100):</label>
+            <input type="range" name="sa" id="sa">
+
+            <label for="color">Color Favorito:</label>
+            <input type="color" name="color">
+
+            <label for="buscar">Buscar en el sitio:</label>
+            <input type="text" name="buscar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Archivos, Texto y Progreso</legend>
+
+            <label for="arch">Subir archivo (se pueden subir varios):</label>
+            <input type="file" name="arch">
+
+            <label for="com">Comentarios:</label>
+            <textarea name="com" id="com"></textarea>
+
+            <label for="prog">Progreso de la tarea (Determinado):</label>
+            <progress value="75" max="100">75%</progress>
+
+            <label for="conec">Conectando...(Indeterminado)</label>
+            <progress></progress>
+        </fieldset>
+
+        <fieldset>
+            <legend>Acciones</legend>
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Limpiar Campos">
+            <button>Botón Genérico</button>
+
+            <br>
+
+            <label for="foto">O envía con esta foto: </label>
+            <input type="image" type="submit" src="./image.png" alt="Enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
