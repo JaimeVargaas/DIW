@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+</head>
+<body>
+    <style>
+        .padre{
+            width: auto;
+            padding: 10px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            /* Es lo mismo overflow que .clearfix::after */
+            overflow-y: auto;
+            background-color: lightblue;
+        }
+        .caja {
+            float: left;
+            width: 150px;
+            height: 150px;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+            background-color: rgb(225, 255, 179);
+            text-align: center;
+            margin: 1px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .sombra {
+            box-shadow: 6px 8px 10px rgb(255, 156, 156);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Uso de la propiedad float</h3>
+    <div class="padre clearfix sombra">
+        <div class="caja">
+            CAJA 1
+        </div>
+        <div class="caja">
+            CAJA 2
+        </div>
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae similique blanditiis error officiis quibusdam voluptates natus iusto, nobis maxime enim architecto quia ab nisi reprehenderit voluptatem reiciendis illo eligendi quam?</p>
+</body>
+</html>
