@@ -99,6 +99,11 @@ footer {
     text-align: center;
 }
 
+footer p {
+    display: inline-block;
+    margin-top: 0.7%;
+}
+
 button {
     background-color: var(--color-secundario);
     border: none;
