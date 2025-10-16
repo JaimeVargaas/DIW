@@ -1,0 +1,70 @@
+:root {
+    --color-primario: #0a4a7a;
+    --color-secundario: #008cba;
+    --color-fondo: #f4f4f4;
+    --color-texto: #333;
+}
+
+/* AJUSTES GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+header {
+    background-color: var(--color-primario);
+    /* Overflow-y le da una altura necesaria para que no desaparezca el header despues de hacer float */
+    overflow-y: auto;
+}
+
+/* MAQUETACIÓN */
+/* cabecera */
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+/* principal */
+main {
+    float: left;
+    width: 65%;
+}
+
+/* aside */
+aside {
+    float: right;
+    width: 30%;
+}
+
+/* figure */
+#fig1 {
+    float: right;
+}
+
+#fig2 {
+    float: left;
+}
+
+/* footer */
+/* clear:both sirve para decirle que arriba tiene elementos, porque al hacer float el footer lo detecta como en blanco */
+footer {
+    clear: both;
+    background-color: var(--color-texto);
+}
+
+/* IMAGENES TAMAÑO */
+img{
+    width: 400px;
+}
+
+.autor {
+    width: 100px;
+}
