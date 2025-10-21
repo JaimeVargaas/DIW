@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+    <style>
+        div {
+            width: 150px;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .div-ppal {
+            position: relative;
+            background-color: aqua;
+            z-index: 40;
+        }
+
+        .div-secundario {
+            position: relative;
+            bottom: 25px;
+            left: 25px;
+            background-color: pink;
+            z-index: 31;
+        }
+
+        .div-tercero {
+            position: relative;
+            bottom: 50px;
+            left: 50px;
+            background-color: blueviolet;
+            z-index: 30;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-ppal">Elemento 1</div>
+    <div class="div-secundario">Elemento 2</div>
+    <div class="div-tercero">Elemento 3</div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .div-ppal{
+            background-color: rgb(180, 255, 255);
+        }
+
+        .div-secun {
+            position: fixed; /*La posición relative impide que se ocupe su espacio aunque no este en el*/
+            bottom: 50px;
+            right: 50px;
+            background-color: pink;
+        }
+
+        .div-ter{
+            background-color: rgb(255, 143, 255);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div-ppal">Div Principal</div>
+    <div class="div-secun">Div Secundario</div>
+    <div class="div-ter">Div Tercero</div>
+
+</body>
+
+</html>
