@@ -8,14 +8,17 @@
 
 /* Header y nav */
 .logo {
-    width: 7%;
-    height: 38px;
-    margin: 15px 20px;
+    height: 100%;
+    max-height: 50px;
+    width: auto;
+    margin: auto 20px;
+    display: flex;
 }
 
 header {
     display: flex;
-    border-bottom: 1px solid rgba(194, 194, 194, 0.918);
+    border-bottom: 1px solid rgba(219, 219, 219, 0.918);
+    box-shadow: 0px 2px 5px rgba(219, 219, 219, 0.918);
     height: 70px;
 }
 
@@ -54,8 +57,8 @@ header .menu2 {
 }
 
 header .menu2 li {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 header button {
@@ -78,7 +81,76 @@ header nav .menu2 li:nth-child(2):after {
     width: 25%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin: 3% 0% 0% 16.5%;
+}
+
+/* Primer cuadrado de la foto de arriba */
+.c1 {
+    background-color: white;
     position: absolute;
-    top: 20%;
-    left: 17%;
+    z-index: 2;
+    top: 25%;
+    left: 14.7%;
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(219, 219, 219, 0.918);
+}
+
+.c1 img {
+    margin-top: 28%;
+    margin-left: 12%;
+}
+
+/* Segundo cuadrado de la foto de arriba */
+.c2 {
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 36%;
+    height: 20px;
+    width: 170px;
+    box-shadow: 0px 2px 5px rgba(219, 219, 219, 0.918);
+    border-radius: 20px;
+}
+
+.c2 p {
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* galeria de imagenes */
+.galeria .img1,
+.img2 {
+    width: 130px;
+    max-width: 140px;
+}
+
+.galeria .img3 {
+    width: 110px;
+    max-width: 120px;
+}
+
+.galeria .img1,
+.img2,
+.img3 {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.galeria {
+    position: relative;
+}
+
+.galeria div {
+    position: absolute;
+    left: 18%;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0px 0px 5px rgba(219, 219, 219, 0.918);
+    width: 20%;
 }
