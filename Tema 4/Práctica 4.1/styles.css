@@ -78,10 +78,10 @@ header nav .menu2 li:nth-child(2):after {
 
 /* Foto arriba */
 .lamine {
-    width: 25%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 3% 0% 0% 16.5%;
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /* Primer cuadrado de la foto de arriba */
@@ -125,32 +125,115 @@ header nav .menu2 li:nth-child(2):after {
 /* galeria de imagenes */
 .galeria .img1,
 .img2 {
-    width: 130px;
-    max-width: 140px;
+    width: 100px;
 }
 
 .galeria .img3 {
-    width: 110px;
-    max-width: 120px;
+    width: 90px;
 }
 
-.galeria .img1,
+.img1,
 .img2,
 .img3 {
     background-color: white;
     border-radius: 5px;
     padding: 15px;
+    box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.918);
 }
 
+/* POner las imagenes centradas con el padre */
 .galeria {
     position: relative;
+    margin: 3% 0% 0% 16.5%;
+    width: 30%;
+    height: auto;
+    background-color: red;
+    background-color: rgba(235, 235, 235, 0.918);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.918);
 }
 
 .galeria div {
-    position: absolute;
-    left: 18%;
+    position: static;
     display: flex;
     gap: 20px;
-    box-shadow: 0px 0px 5px rgba(219, 219, 219, 0.918);
-    width: 20%;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Titulo de la derecha */
+.content1 .title {
+    display: absolute;
+    margin: 10% 3% 0% 10%;
+}
+
+.content1, .content2{
+    display: flex;
+}
+
+.title p {
+    margin: 5% 0;
+}
+
+.negrita {
+    color: black;
+    font-weight: bold;
+}
+
+/* contenido de abajo */
+.content2 {
+    margin: -2% 20%;
+}
+
+.content2 .title {
+    position: absolute;
+    margin: 2% 3% 0% 40%;
+}
+
+
+/* primera foto de abajo */
+.salto {
+    width: 10%;
+    position: relative;
+    top: 90px;
+    left: 195px;
+    z-index: 3;
+    border-radius: 5px;
+}
+
+.movil {
+    width: 180%;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+/* Segunda foto de abajo */
+.c4 {
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    height: 200px;
+    position: absolute; 
+    z-index: 8;
+    border-radius: 5px;
+    margin: 240px 0px 0px 500px;
+    box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.918);
+}
+
+.c4>section img {
+    border-radius: 5px;
+    width: 95%;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.918);
+}
+
+.c4 > img {
+    width: 40%;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5%;
+    box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.918);
 }
