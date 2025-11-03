@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>August</title>
 </head>
+
 <body>
     <header>
         <img src="./img/august-logo.png" alt="">
@@ -19,7 +21,7 @@
                 <li><a href="">Resources</a></li>
             </ul>
         </nav>
-        
+
         <p>Log in</p>
         <button>Request Demo</button>
     </header>
@@ -30,52 +32,90 @@
 
         <div class="principal">
             <h1>The EHR platform <br>
-            caregivers love</h1>
-            <p>August Health drives proactive care and uplevels <br> operations with our modern senior living platform</p>
+                caregivers love</h1>
+            <p>August Health drives proactive care and uplevels <br> operations with our modern senior living platform
+            </p>
             <button>Request demo</button>
         </div>
 
+        <div class="curva">
+            <svg viewBox="0 0 1200 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Máscara con degradado de opacidad que va de opaco arriba a transparente abajo -->
+                <defs>
+                    <linearGradient id="fadeDown" x1="0" x2="0" y1="0" y2="1">
+                        <!-- stop-opacity controla la opacidad de la forma en cada punto -->
+                        <stop offset="0%" stop-color="#f3eae0" stop-opacity="1" />
+                        <stop offset="60%" stop-color="#f3eae0" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#f3eae0" stop-opacity="0" />
+                    </linearGradient>
+
+                    <!-- Alternativa: usar un mask para que la forma se dibuje y luego la máscara controle la transparencia -->
+                    <mask id="maskFade">
+                        <!-- fondo negro (completamente transparente), luego rectángulo con degradado blanco -> opaco -->
+                        <rect x="0" y="0" width="1200" height="160" fill="url(#alphaGradient)" />
+                    </mask>
+
+                    <!-- Gradiente de alfa para la máscara (blanco = visible, negro = invisible) -->
+                    <linearGradient id="alphaGradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="white" stop-opacity="1" />
+                        <stop offset="70%" stop-color="white" stop-opacity="1" />
+                        <stop offset="100%" stop-color="white" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+
+                <path d="M0,0 C300,140 900,140 1200,0 L1200,160 L0,160 Z" fill="url(#fadeDown)" />
+            </svg>
+        </div>
+
+
+
         <p class="trusted">Trusted by leading senior living operators</p>
-            <h6>THE PLATFORM</h6>
-            <h2>Get to know us</h2>
+        <h6>THE PLATFORM</h6>
+        <h2>Get to know us</h2>
         <div class="secundario">
 
             <section>
                 <h3>Move-Ins</h3>
                 <div>
-                    <p>A differentiated, full-digital move-in experience for families, <br>with real-time collaboration and e-signature.</p>
+                    <p>A differentiated, full-digital move-in experience for families, <br>with real-time collaboration
+                        and e-signature.</p>
                     <button>➜</button>
                 </div>
             </section>
             <section>
                 <h3>eMAR</h3>
                 <div>
-                    <p>A best-in-class eMAR -- easy enough for your newest med <br>tech, powerful enough for your savviest nurse.</p>
+                    <p>A best-in-class eMAR -- easy enough for your newest med <br>tech, powerful enough for your
+                        savviest nurse.</p>
                     <button>➜</button>
                 </div>
             </section>
             <section>
                 <h3>EHR</h3>
                 <div>
-                    <p>Our renowned EHR drives proactive care, increased <br> compilance, and better business operations.</p>
+                    <p>Our renowned EHR drives proactive care, increased <br> compilance, and better business
+                        operations.</p>
                     <button>➜</button>
                 </div>
             </section>
             <section>
                 <h3>Insights</h3>
                 <div>
-                    <p>Advanced inteligence provides real-time visibility into <br> communities and predictive risk detection.</p>
+                    <p>Advanced inteligence provides real-time visibility into <br> communities and predictive risk
+                        detection.</p>
                     <button>➜</button>
                 </div>
             </section>
             <section>
                 <h3>Billing & Payments</h3>
                 <div>
-                    <p>Our integrated platform simplifies billing, streamlines <br> payments, and improves revenue capture.</p>
+                    <p>Our integrated platform simplifies billing, streamlines <br> payments, and improves revenue
+                        capture.</p>
                     <button>➜</button>
                 </div>
             </section>
         </div>
-    </main>  
+    </main>
 </body>
+
 </html>
