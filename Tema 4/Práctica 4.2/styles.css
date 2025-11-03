@@ -1,0 +1,162 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+html{
+    background-color: rgb(242, 242, 242);
+}
+
+:root {
+    --color-principal: rgb(48, 48, 255);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    box-shadow: 2px 2px 5px rgb(179, 179, 179);
+    align-items: center;
+    width: 80%;
+    margin: 1% auto;
+    border-radius: 80px;
+    padding: 5px;
+    background-color: white;
+}
+
+header img {
+    width: 2%;
+    height: 2%;
+    display: flex;
+    margin-left: 1%;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+header button {
+    margin-right: 1%;
+    margin-left: 2%;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header p {
+    color: var(--color-principal);
+}
+
+
+/* JUST RELEASED */
+.released {
+    border: 1px solid var(--color-principal);
+    border-radius: 20px;
+    text-align: center;
+    width: 33%;
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+main .released p {
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+/* PRINCIPAL */
+main .principal {
+    display: flex;
+    margin-top: 10%;
+    align-items: center;                    
+    flex-direction: column;
+    margin-bottom: 15%;  
+}
+
+.principal h1 {
+    text-align: center;
+}
+
+.principal button{
+    background-color: var(--color-principal);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 2%;
+    font-size: 1.1em;
+}
+
+/* SECUNDARIO */
+.trusted {
+    font-size: 1.5em;
+    font-weight: 599;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+main h6{
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgb(182, 182, 182);
+    width: 10%;
+    font-weight: 600;
+    padding: 8px 8px;
+    border-radius: 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.secundario section {
+    background-color: rgb(212, 212, 212);
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    width:42%;
+}
+
+.secundario button {
+    color: var(--color-principal);
+    font-size: 1.5em;
+    font-weight: 100;
+    border-radius: 50%;
+    padding: 0px 15px;
+    box-shadow: 2px 2px 2px rgb(194, 194, 194);
+    margin-top: -20px;
+}
+
+.secundario section div {
+    display: flex;
+    gap: 20px;
+}
+
+.secundario {
+  display: table;
+  align-items: center;
+  gap: 30px;
+}
+
+.secundario section {
+    display: table-row;
+}
+
+
