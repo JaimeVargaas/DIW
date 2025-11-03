@@ -87,7 +87,7 @@ main .principal {
     margin-top: 10%;
     align-items: center;                    
     flex-direction: column;
-    margin-bottom: 15%;  
+    margin-bottom: 10%;  
 }
 
 .principal h1 {
@@ -126,40 +126,117 @@ main h2 {
     font-size: 2.2em;
 }
 
-.secundario section {
-    background-color: rgb(212, 212, 212);
-    margin-top: 10px;
-    padding: 20px;
-    border-radius: 20px;
-    width:42%;
-}
-
-.secundario button {
+/* TABLAS DE INFORMACION */
+.secundario table button {
     color: var(--color-principal);
     font-size: 1.5em;
-    font-weight: 100;
     border-radius: 50%;
+    height: 50px;
     padding: 0px 15px;
     box-shadow: 2px 2px 2px rgb(194, 194, 194);
-    margin-top: -20px;
+    margin-top: -60px;
 }
 
-.secundario section div {
+.secundario table{
+    margin: 0 auto;
+    margin-top: 3%;
+    border-spacing: 30px 20px;
+}
+
+.secundario table td {
+    background: linear-gradient(to bottom, #ffebfa, #fdffe7);
+    border-radius: 20px;
+    padding: 20px;
+    width:42%;
+    box-shadow: 2px 2px 2px rgb(192, 192, 192);
+}
+
+.secundario table h3 {
+    font-size: 2em;
+    margin-left: 5%;
+}
+
+.secundario table td div {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.secundario {
-  display: table;
-  align-items: center;
-  gap: 30px;
-}
 
-.secundario section {
-    display: table-row;
-}
-
+/* Curva en mitad de la pagina */
 .curva .shape-fill { fill: #f3eae0; }
+
+/* TERCER */
+.tercer {
+    margin-top: 2%;
+    padding-top: 5%;
+    background-color: rgb(43, 0, 160);
+    padding-bottom: 10%;
+    border-bottom-left-radius: 100% 300px;
+    border-bottom-right-radius: 100% 300px;
+}
+
+.tercer h6{
+    color: grey;
+}
+
+/* titulo tercer */
+.titulo3 {
+    color: white;
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.titulo3 h1, .titulo3 p {
+    font-weight: normal;
+}
+
+.titulo3 h1 {
+    margin-bottom: 1%;
+}
+
+/* Ajustes generales de los section */
+.tercer .data section {
+    display: flex;
+    gap: 200px;
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 10;
+}
+
+/* Primer */
+.data section:first-child {
+    color: white;
+    background-color: rgb(28, 92, 28);
+    margin-bottom: 1%;
+}
+
+.data section h2{
+     font-weight: normal;
+     text-align: left;
+}
+
+.data section h2 {
+    font-weight: normal;
+}
+
+
+/* segundo */
+.data section:nth-child(2){
+    background-color: rgb(175, 77, 38);
+    margin-bottom: 1%;
+    gap: 215px;
+}
+
+/* tercero */
+.data section:nth-child(3){
+    background-color: rgb(235, 123, 235);
+     gap: 230px;
+}
+
 
 
 
