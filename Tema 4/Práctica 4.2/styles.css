@@ -26,6 +26,11 @@ header {
     background-color: white;
 }
 
+/* permitir posicionar el nav por encima del flujo y centrarlo */
+header {
+    position: relative;
+}
+
 header img {
     width: 2%;
     height: 2%;
@@ -35,24 +40,36 @@ header img {
 
 header ul li{
     list-style: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+header ul li:hover {
+    background-color: rgb(219, 219, 219);
+    border-radius: 3px;
 }
 
 header ul {
     display: flex;
-    gap: 20px;
+    gap: 35px;
+    text-align: center;
 }
 
 header nav {
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 10;
 }
 
 header button {
-    margin-right: 1%;
-    margin-left: 2%;
     background-color: var(--color-principal);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
+    margin-right: 2%; 
 }
 
 header nav a {
@@ -60,8 +77,11 @@ header nav a {
     color: black;
 }
 
+
 header p {
     color: var(--color-principal);
+    margin-left: auto; 
+    margin-right: 0.6rem; 
 }
 
 
@@ -199,12 +219,21 @@ main h2 {
 /* Ajustes generales de los section */
 .tercer .data section {
     display: flex;
-    gap: 200px;
-    width: 45%;
+    gap: 8%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     padding-bottom: 10;
+}
+
+.data {
+    border: 1px solid white;
+    padding: 10px 0px;
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    border-radius: 40px;
 }
 
 /* Primer */
@@ -228,14 +257,55 @@ main h2 {
 .data section:nth-child(2){
     background-color: rgb(175, 77, 38);
     margin-bottom: 1%;
-    gap: 215px;
+    gap: 10%;
 }
 
 /* tercero */
 .data section:nth-child(3){
     background-color: rgb(235, 123, 235);
-     gap: 230px;
+    gap: 20%;
 }
+
+/* NAV HOVER */
+.tabla table{
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 80%;
+      border-spacing: 30px 20px;
+}
+
+.tabla img {
+    width: 40px;
+}
+
+.tabla table td div{
+    display: flex;
+}
+
+.tabla table td div h5 {
+    margin-top: 4%;
+    margin-left: 2%;
+    font-size: 1.3em;
+    font-weight: normal;
+    color: rgb(50, 50, 190);
+}
+
+.especial {
+    background-color: rgb(210, 226, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(160, 193, 255);
+}
+
+.tabla {
+  display: none;
+}
+
+
+
+
 
 
 

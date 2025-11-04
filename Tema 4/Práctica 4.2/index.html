@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
     <title>August</title>
 </head>
 
@@ -15,7 +16,7 @@
         <h2>August</h2>
         <nav>
             <ul>
-                <li><a href="">Platform↓</a></li>
+                <li><a id="platform" href="">Platform↓</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Customers</a></li>
                 <li><a href="">Resources</a></li>
@@ -25,6 +26,73 @@
         <p>Log in</p>
         <button>Request Demo</button>
     </header>
+
+    <div class="tabla">
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <img src="./img/logo01.png" alt="">
+                        <h5>Move-Ins</h5>
+                    </div>
+                    <p>Modern, fully-digital move-in experiences that families and communities love</p>
+                </td>
+                <td>
+                    <div>
+                        <img src="./img/logo02.png" alt="">
+                        <h5>EHR</h5>
+                    </div>
+                    <p>Our easy-to-use EHR advances caregivers from reactive tactics to proactive care strategies
+                    </p>
+                </td>
+                <td>
+                    <div>
+                        <img src="./img/logo03.png" alt="">
+                        <h5>eMAR</h5>
+                    </div>
+                    <p>A smarter eMAR for better medication management and clinical operations</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <img src="./img/logo04.png" alt="">
+                        <h5>Insights</h5>
+                    </div>
+                    <p>Proactive intelligence and advanced analytics for senior living operators</p>
+                </td>
+                <td>
+                    <div>
+                        <img src="./img/logo05.png" alt="">
+                        <h5>Billin & Payments</h5>
+                    </div>
+                    <p>An integrated platform that improves billing and payments for communities and families </p>
+                </td>
+                <td>
+                    <div>
+                        <img src="./img/logo06.png" alt="">
+                        <h5>Care Track</h5>
+                    </div>
+                    <p>Our simple, mobile-first solution improves daily care delivery and documentation</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div>
+                        <img src="./img/logo02.png" alt="">
+                        <h5>Integrations</h5>
+                    </div>
+                    <p>August Health integrates with leading systems to enhance workflows and ensure real-time data
+                        flow</p>
+                </td>
+                <td colspan="2">
+                    <p class="especial">August Health is a flexible, integrated platform that drives exceptional care and operations</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <main>
         <div class="released">
             <p>Just released: Insights from our Clinical Leaders Survey with ASHA</p>
@@ -69,20 +137,22 @@
         <p class="trusted">Trusted by leading senior living operators</p>
 
         <div class="secundario">
-        <h6>THE PLATFORM</h6>
-        <h2>Get to know us</h2>
+            <h6>THE PLATFORM</h6>
+            <h2>Get to know us</h2>
             <table>
                 <tr>
                     <td>
                         <h3>Move-Ins</h3>
-                        <p>A differentiated, full-digital move-in experience for families, <br>with real-time collaboration and e-signature.</p>
+                        <p>A differentiated, full-digital move-in experience for families, <br>with real-time
+                            collaboration and e-signature.</p>
                         <div>
                             <button>➜</button>
                         </div>
                     </td>
                     <td>
                         <h3>eMAR</h3>
-                                <p>A best-in-class eMAR -- easy enough for your newest med <br>tech, powerful enough for your savviest nurse.</p>
+                        <p>A best-in-class eMAR -- easy enough for your newest med <br>tech, powerful enough for your
+                            savviest nurse.</p>
                         <div>
                             <button>➜</button>
                         </div>
@@ -91,8 +161,9 @@
                 <tr>
                     <td colspan="2">
                         <h3>EHR</h3>
-                        <p>Our renowned EHR drives proactive care, increased <br> compilance, and better business operations.</p>
-                        <div>  
+                        <p>Our renowned EHR drives proactive care, increased <br> compilance, and better business
+                            operations.</p>
+                        <div>
                             <button>➜</button>
                         </div>
                     </td>
@@ -100,14 +171,16 @@
                 <tr>
                     <td>
                         <h3>Insights</h3>
-                        <p>Advanced inteligence provides real-time visibility into <br> communities and predictive risk detection.</p>
+                        <p>Advanced inteligence provides real-time visibility into <br> communities and predictive risk
+                            detection.</p>
                         <div>
                             <button>➜</button>
                         </div>
                     </td>
                     <td>
                         <h3>Billing & Payments</h3>
-                        <p>Our integrated platform simplifies billing, streamlines <br> payments, and improves revenue capture.</p>
+                        <p>Our integrated platform simplifies billing, streamlines <br> payments, and improves revenue
+                            capture.</p>
                         <div>
                             <button>➜</button>
                         </div>
@@ -120,20 +193,27 @@
             <h6>OUR VALUES</h6>
             <div class="titulo3">
                 <h1>Designed for forward-thinking, <br>care-obsessed operators</h1>
-                <p>We believe senior living communities deserve exceptional technology that enables <br>them to provide exceptional care.</p>
+                <p>We believe senior living communities deserve exceptional technology that enables <br>them to provide
+                    exceptional care.</p>
             </div>
             <div class="data">
                 <section>
-                    <h2>Accesible data, <br>actionable insights</h2>
-                    <p>An operating strategy is only as good as the data <br> that's driving it. Our embedded BI dashboard <br> delivers unmatched visibility and predictive <br>capabilities for resident care, operations, and <br>performance oversight at your communities</p>
+                    <h2>Accesible data, actionable insights</h2>
+                    <p>An operating strategy is only as good as the data that's driving it. Our embedded BI
+                        dashboard <br> delivers unmatched visibility and predictive capabilities for resident care,
+                        operations, and <br>performance oversight at your communities</p>
                 </section>
                 <section>
-                    <h2>Unquestionably <br>caregiver-friendly</h2>
-                    <p>August Health is easy to learn and easy to use. <br>Communities rapidly adopt our platform because <br>every interface and interaction is designed to be <br>efficient, intuitive, and helpful — allowing staff to <br> focus on resident care.</p>
+                    <h2>Unquestionably caregiver-friendly</h2>
+                    <p>August Health is easy to learn and easy to use. Communities rapidly adopt our platform
+                        because every interface and interaction is designed to be efficient, intuitive, and
+                        helpful — allowing staff to focus on resident care.</p>
                 </section>
                 <section>
-                    <h2>Purpose-built for <br>proactive care</h2>
-                    <p>We help operators shift from reactive tactics to <br>proactive strategies. Built-in intelligence and <br>smarter workflows help you spot trends, address <br>risks earlier, and stay a step ahead of everything <br>from increasing acuity to compliance deadlines.</p>
+                    <h2>Purpose-built for proactive care</h2>
+                    <p>We help operators shift from reactive tactics to proactive strategies. Built-in intelligence
+                        and smarter workflows help you spot trends, address risks earlier, and stay a step ahead
+                        of everything from increasing acuity to compliance deadlines.</p>
                 </section>
             </div>
         </div>
