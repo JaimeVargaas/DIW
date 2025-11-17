@@ -1,0 +1,108 @@
+.ej1:hover {
+    background-color: green;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.ej1 {
+    background-color: blue;
+}
+
+/* ------------------------------------------------------------- */
+
+.ej2:hover {
+    opacity: 0.7;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------- */
+
+.ej3 {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+
+.ej3 div:first-child{
+    width: 90px;
+    height: 40px;
+    background-color: green;
+}
+
+.ej3 div:nth-child(2){
+    width: 90px;
+    height: 40px;
+    background-color: purple;
+}
+
+.ej3:hover div:first-child {
+    background-color: yellow;
+}
+
+.ej3:hover div:nth-child(2) {
+    transition: 0.3s;
+    background-color: brown;
+}
+
+/* ------------------------------------------------------------- */
+
+.ej5 {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(12, 104, 4);
+}
+
+.ej5:hover {
+    transform: translate(50px,20px);
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------------------- */
+.ej6 {
+    width: 10%;
+}
+
+.ej6:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+/* ------------------------------------------------------------- */
+.ej7 {
+    background-color: yellow;
+    width: 30%;
+}
+
+.ej7:hover {
+    transform: skew(15deg, -10deg);
+}
+
+/* ------------------------------------------------------------- */
+.ej8 {
+    width: fit-content;
+}
+.ej8:hover {
+    transform: translate(100px,0px) scale(1.2) rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+/* ------------------------------------------------------------- */
+.ej9 {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    background-color: aquamarine;
+}
+
+.ej9:hover {
+     transform: rotateY(180deg);
+}
+
+.ej9 div {
+    backface-visibility: hidden; 
+}
+
+.ej9 div:nth-child(2) {
+    transform: rotateY(180deg);
+}

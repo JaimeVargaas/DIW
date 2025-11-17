@@ -1,0 +1,28 @@
+p {
+    position: relative;
+    /* para coger el width del contenedor segun el contenido */
+    width: fit-content;
+    animation-name: slidein;
+    animation-duration: 2s;
+    /* para que la animacion se mantenga como tu la pongas */
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+    0%{
+        left: 100%;
+    }
+    33%{
+        left: 50%;
+        transform: rotate(0deg);
+    }
+    66%{
+        left: 50%;
+        transform: rotate(360deg);
+    }
+    100% {
+        left: 0%;
+        transform: rotate(360deg);
+    }
+}
+
