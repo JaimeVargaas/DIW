@@ -106,3 +106,159 @@
 .ej9 div:nth-child(2) {
     transform: rotateY(180deg);
 }
+
+/* ------------------------------------------------------------- */
+.ej10 {
+    background-color: red;
+    width: 10%;
+    height: 100px;
+    perspective: 600px;
+}
+
+.ej10:hover {
+    transform: rotateX(90deg);
+    transform-origin: top center; 
+}
+/* ------------------------------------------------------------- */
+.ej11 {
+    box-shadow: 0px 0px 10px red;
+}
+
+.ej11:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 5px red;
+}
+/* ------------------------------------------------------------- */
+.ej12 {
+    border-radius: 50%;
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    animation-duration: 2s;
+    animation-name: pulsar;
+    /* para que la animacion sea infinita */
+    animation-iteration-count: infinite;
+    /* para que vaya alternando de 0 a 100 y de 100 a 0 */
+    animation-direction: alternate;
+}
+
+@keyframes pulsar {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+}
+
+/* ------------------------------------------------------------- */
+.ej13 {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: desliza;
+    width: fit-content;
+    position: relative;
+}
+
+@keyframes desliza {
+    0% {
+        left: 0%;
+    }
+
+    100%{
+        left: 50%;
+    }
+}
+
+/* ------------------------------------------------------------- */
+.ej14 {
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: pelota;
+    animation-duration: 1s;
+}
+
+@keyframes pelota { 
+    0% {
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(0,-50px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* ------------------------------------------------------------- */
+.ej15 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(245, 63, 50);
+    margin: 50px 50px;
+
+    animation-duration: 4s, 2s;
+    animation-name: girar, cambiarColor;
+    animation-iteration-count: infinite, infinite;
+    animation-timing-function: linear, normal;
+    animation-fill-mode: forwards, normal;
+}
+
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cambiarColor {
+    0%{
+        background-color: rgb(245, 63, 50);
+    }
+    100%{
+        background-color: rgb(99, 99, 253);
+    }
+}
+
+/* ------------------------------------------------------------- */
+.ej16 {
+  width: 100px;
+  height: 100px;
+}
+
+.ej16 .borde {
+  stroke: #000;
+  stroke-width: 6;
+  fill: none;
+}
+.ej16 .stroke {
+  stroke: #000;
+  stroke-width: 8;
+}
+
+.ej16 .linea {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+.ej16:hover .borde,
+.ej16:hover .stroke { stroke: #e00000; }
+
+.ej16:hover .centro { opacity: 0; }
+
+.ej16:hover .sup {
+    transform: translateY(20px)  rotate(45deg);  
+    } 
+    
+.ej16:hover .inf { 
+    transform: translateY(-20px) rotate(-45deg); 
+} 
